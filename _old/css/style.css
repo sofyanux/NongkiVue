@@ -1,0 +1,241 @@
+header{
+	padding: 10px;
+	box-sizing: border-box;
+}
+.navbar{
+	background-color: #48c774;
+	margin-top: 15px;
+}
+.is-hoverable{
+	color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.is-hoverable:hover{
+	height: 100%;
+	background: #38b965 !important;
+	color: #fff !important;
+}
+.judul{
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+.media{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.media-content{
+	flex-grow: 0;
+	margin: 10px;
+	width: 96%;
+}
+.media-content .content{
+	padding: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 2px solid #fff;
+}   
+.media-content .content:hover{
+	border-bottom: 2px solid #48c774;
+}   
+.media-content .content img{
+	width: 100%;
+}
+.media-right{
+	flex-grow: 1;
+	width: 96%;
+	margin: 10px;
+}
+.content .continue {
+	transition: all 0.5s ease;
+	font-weight: 700; 
+}
+
+.widget{
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+	background-color: #fff;
+	padding: 30px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+.widget:hover{
+	border-bottom: 2px solid #48c774;
+}
+.widget ul{
+	color:#fff;
+	width: 100%;
+	background: #48c774;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+.widget ul li{
+	margin: 0;
+}
+.widget a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #48c774;
+	font-weight:600;
+}
+
+.widget a:hover{
+	background-color:#38b965;
+	color: #fff;
+}
+.widget ul a{
+	padding:15px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+.widget ul a:hover {
+	background-color:#38b965;
+}
+.post-info{
+	display: none;
+	background-color: #48c774;
+	color: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 200px;
+	float: right;
+	clear: both;
+}
+iframe{
+	width: 100%;
+	height: 450px;
+}
+
+.comment{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.comment input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: -15px;
+}
+.comment #tambah{
+	width: 100px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: -15px;
+}
+.comment textarea{
+	width: 100%;
+	height: 150px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+.comment .komentar{
+	width: 100%;
+	height: 150px;
+	margin-top: -10px;
+}
+#post-komen li{
+	width: 100%;
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+#post-komen div{
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	background: #48c774;
+	width: 200px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#post-komen{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+#post-komen p{
+	border:1px solid #48c774;
+	margin-top: -1px;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+footer{
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: -1.5rem !important;
+}
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+#slider { overflow: hidden; }
+#slider figure img { width: 20%; float: left; }
+#slider figure { 
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slidy infinite; 
+}
+
+.fade-enter-active, .fade-leave-active {
+	transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+	opacity: 0;
+}
+
+#demo button{
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px){
+	.media{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.media-content{
+		flex-grow: 0;
+		margin: 10px;
+		width: 70%;
+	}
+	.media-right{
+		flex-grow: 1;
+		width: 20%;
+		margin: 10px;
+	}
+	.post-info{
+		display: inline;
+	}
+	.content .continue:hover {
+		margin-left:10px;
+	}
+}

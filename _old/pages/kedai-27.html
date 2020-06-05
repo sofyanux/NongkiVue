@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Tempat Nongkrong Balikpapan</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body class="has-background-light"> 
+	
+	<!--Bagian Header-->
+	<header class="has-text-centered margin">	
+		<h1 class="title has-text-weight-bold is-uppercase">Tempat Nongkrong Balikpapan</h1>
+		<p class="subtitle">Cari tempat nongkrongmu di Balikpapan & temukan sekarang juga tempat favoritmu</p>
+		
+	</header>
+
+	<!--Bagian Navigasi-->
+	<nav class="navbar">
+		<div class="navbar-start">
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="../index.html">Beranda</a>
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="rekomendasi.html">Rekomendasi</a>
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="populer.html">Tempat Populer</a>
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="tentang.html">Tentang</a>
+		</div>
+		<div class="navbar-end">
+			<div class="navbar-item">
+				<div class="field has-addons">
+				  <p class="control">
+					<input class="input" type="text" placeholder="Find a post">
+				  </p>
+				  <p class="control">
+					<button class="button is-success is-light">
+					  Search
+					</button>
+				  </p>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--Bagian Konten-->
+	<div class="judul has-text-centered">
+		<h1 class="title has-text-weight-bold">INFORMASI LENGKAP</h1>
+		<p class="subtitle">Informasi lengkap dari tempat nongkrong pilihanmu</p>
+	</div>
+	<div class="media">
+		<aside class="media-right">
+			<div class="widget">
+				<h2 class="title is-5 is-uppercase">Rekomendasi</h2>
+				<p class="is-justified">Berikut adalah daftar rekomendasi tempat untuk kalian.</p>
+				<div id="rekomendasi">
+					<button v-on:click="show = !show">
+					  Lihat/Tutup
+					</button>
+					<transition name="fade">
+					  	<ul v-if="show">
+							<li><a href="laperpoll.html">Angkringan Laperpoll</a></li>
+							<li><a href="kopi-mantan.html">Kopi Rumah Mantan</a></li>
+							<li><a href="kedai-27.html">Kedai 27</a></li>
+					  	</ul>
+					</transition>
+				</div>
+			</div>
+			<div class="widget">
+				<h2 class="title is-5 is-uppercase">Tempat Populer</h2>
+				<p class="is-justified">Berikut adalah daftar tempat populer untuk kalian.</p>
+				<div id="populer">
+					<button v-on:click="show = !show">
+					  Lihat/Tutup
+					</button>
+					<transition name="fade">
+					  	<ul v-if="show">
+							<li><a href="laperpoll.html">Angkringan Laperpoll</a></li>
+							<li><a href="kopi-mantan.html">Kopi Rumah Mantan</a></li>
+							<li><a href="kedai-27.html">Kedai 27</a></li>
+					  	</ul>
+					</transition>
+				</div>
+			</div>
+			<div class="widget">
+				<h2 class="title is-5 is-uppercase">Tentang Kami</h2>
+				<p class="is-justified">Jika anda ingin mempromosikan tempat nongkrong silahkan hubungi kami <a href="tentang.html">di sini</a>.</p>
+			</div>
+		</aside>
+
+		<div class="media-content">
+			<div class="content">
+				<div id="slider">
+					<figure>
+						<img src="../img/kedai.jpg" alt>
+						<img src="../img/kedai2.jpg" alt>
+						<img src="../img/kedai3.jpg" alt>
+					</figure>
+				</div>
+				<h1> Kedai 27 </h1>
+				<hr>
+				<p>
+					Minum kopi telah menjadi budaya di Indonesia. Budaya minum kopi telah ada dari Sabang sampai Merauke. Sekarang ini kopi bukan hanya minuman untuk menghangatkan tubuh, tetapi telah menjadi sarana bersosialisasi.Mulai dari secangkir kopi percakapan yang hangat sampai pertukaran informasi terjalin. Maka dari itu, tidak mengherankan bahwa minum kopi telah menjadi gaya hidup. Kopi dapat disajikan dengan berbagai cara. Namun, untuk mendapatkan hasil terbaik yang dibutuhkan biji kopi pilihan dan mesin kopi yang canggih dan mahal. Dengan demikian, secangkir kopi yang baik hanya dapat dinikmati oleh kalangan tertentu saja. Berawal dari ide menyediakan kopi yang nikmat dan berkualitas untuk semua kalangan, Kedai 27 menciptakan mesin kopi khusus yang mampu menghasilkan secangkir kopi berkualitas. Mesin kopi kami mampu memproduksi espresso yang sama dengan kopi yang biasanya diproduksi oleh mesin kopi mahal dan membutuhkan daya listrik yang besar.
+					<br><br>Alamat : Jalan Sukarno Hatta Km2, No12, Rt48 Kelurahan, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76125
+					<br>Buka setiap hari 10.00-00.00
+					<br><br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9031189438815!2d116.83984051415716!3d-1.227234935909287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147cba5187761%3A0xe30010981475d082!2sKedai%2027%20Balikpapan!5e0!3m2!1sid!2sid!4v1583536512495!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</p>
+				<h1>Posting Komentar</h1>
+				<hr>
+				<p>Sampaikan kritik dan saran kamu di kolom komentar agar kami dapat menjadikannya sebagai bahan penilaian tentang tempat ini.</p>
+				<form class="comment">
+					<p>Nama :</p>
+					<input id="name" type="text" placeholder="Masukkan nama..." required>
+					<p>Komentar :</p>
+					<textarea id="komen" placeholder="Tulis komentar..." required></textarea>
+					<input id="tambah" type="button" value="Submit" onclick="kirim()"/>
+				</form>
+				<h1>Komentar</h1>
+				<hr>
+				<div id="post-komen">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Bagian Footer-->
+	<footer class="has-text-centered">
+		<p>Website ini dibuat untuk memudahkan anda dalam mencari tempat nongkrong bersama teman</p>
+		<p>&copy; Kelompok 8</p>	
+	</footer>
+	<script src="../js/script.js"></script>
+</body>
+</html>

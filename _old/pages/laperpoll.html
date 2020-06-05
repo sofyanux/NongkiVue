@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Tempat Nongkrong Balikpapan</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body class="has-background-light"> 
+	
+	<!--Bagian Header-->
+	<header class="has-text-centered margin">	
+		<h1 class="title has-text-weight-bold is-uppercase">Tempat Nongkrong Balikpapan</h1>
+		<p class="subtitle">Cari tempat nongkrongmu di Balikpapan & temukan sekarang juga tempat favoritmu</p>
+		
+	</header>
+
+	<!--Bagian Navigasi-->
+	<nav class="navbar">
+		<div class="navbar-start">
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="../index.html">Beranda</a>
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="rekomendasi.html">Rekomendasi</a>
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="populer.html">Tempat Populer</a>
+			<a class="navbar-item is-hoverable is-uppercase has-text-weight-semibold" href="tentang.html">Tentang</a>
+		</div>
+		<div class="navbar-end">
+			<div class="navbar-item">
+				<div class="field has-addons">
+				  <p class="control">
+					<input class="input" type="text" placeholder="Find a post">
+				  </p>
+				  <p class="control">
+					<button class="button is-success is-light">
+					  Search
+					</button>
+				  </p>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--Bagian Konten-->
+	<div class="judul has-text-centered">
+		<h1 class="title has-text-weight-bold">INFORMASI LENGKAP</h1>
+		<p class="subtitle">Informasi lengkap dari tempat nongkrong pilihanmu</p>
+	</div>
+	<div class="media">
+		<aside class="media-right">
+			<div class="widget">
+				<h2 class="title is-5 is-uppercase">Rekomendasi</h2>
+				<p class="is-justified">Berikut adalah daftar rekomendasi tempat untuk kalian.</p>
+				<div id="rekomendasi">
+					<button v-on:click="show = !show">
+					  Lihat/Tutup
+					</button>
+					<transition name="fade">
+					  	<ul v-if="show">
+							<li><a href="laperpoll.html">Angkringan Laperpoll</a></li>
+							<li><a href="kopi-mantan.html">Kopi Rumah Mantan</a></li>
+							<li><a href="kedai-27.html">Kedai 27</a></li>
+					  	</ul>
+					</transition>
+				</div>
+			</div>
+			<div class="widget">
+				<h2 class="title is-5 is-uppercase">Tempat Populer</h2>
+				<p class="is-justified">Berikut adalah daftar tempat populer untuk kalian.</p>
+				<div id="populer">
+					<button v-on:click="show = !show">
+					  Lihat/Tutup
+					</button>
+					<transition name="fade">
+					  	<ul v-if="show">
+							<li><a href="laperpoll.html">Angkringan Laperpoll</a></li>
+							<li><a href="kopi-mantan.html">Kopi Rumah Mantan</a></li>
+							<li><a href="kedai-27.html">Kedai 27</a></li>
+					  	</ul>
+					</transition>
+				</div>
+			</div>
+			<div class="widget">
+				<h2 class="title is-5 is-uppercase">Tentang Kami</h2>
+				<p class="is-justified">Jika anda ingin mempromosikan tempat nongkrong silahkan hubungi kami <a href="tentang.html">di sini</a>.</p>
+			</div>
+		</aside>
+
+		<div class="media-content">
+			<div class="content">
+				<div id="slider">
+					<figure>
+						<img src="../img/laper.jpg">
+						<img src="../img/laper2.jpg">
+						<img src="../img/laper3.jpg">
+					</figure>
+				</div>
+				<h1> Angkringan Laperpoll </h1>
+				<hr>
+				<p>
+					Buat kalian nih cess yang suka nongki, khususnya kalian yang berada di Balikpapan ada nih tempat nongki yang cukup populer buat kalian. Apa itu? Mau tau? oke deh mimin kasih tau ya biar nda penasaran bubuhan kalian ini cess...
+					Angkringan Laperpoll adalah salah satu tempat nongkrong yang cukup populer di Balikpapan. Tunggu apa lagi cess tempat populer ini cess, selain banyak anak muda ngumpul nongki disini banyak tersedia makanan murah-murah cess yang pastinya bakal pas sama dompet kalian. Kalo kalian penasaran bisa nih cek-cek ke TKP langsung cess, nih di bawah udah mimin kasih alamat sama jam bukanya Angkringan Laperpoll. Kuy Nongki...
+					<br><br>Alamat: Jalan Satu, Gn. Samarinda, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76124
+					<br>Buka setiap hari	17.00–04.30
+					<br><br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.4441274154958!2d116.85553162375288!3d-1.237161160592129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d00e72b43624d3!2sAngkringan%20Laperpoll!5e0!3m2!1sid!2sid!4v1583535965574!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</p>
+				<h1>Posting Komentar</h1>
+				<hr>
+				<p>Sampaikan kritik dan saran kamu di kolom komentar agar kami dapat menjadikannya sebagai bahan penilaian tentang tempat ini.</p>
+				<form class="comment">
+					<p>Nama :</p>
+					<input id="name" type="text" placeholder="Masukkan nama..." required>
+					<p>Komentar :</p>
+					<textarea id="komen" placeholder="Tulis komentar..." required></textarea>
+					<input id="tambah" type="button" value="Submit" onclick="kirim()"/>
+				</form>
+				<h1>Komentar</h1>
+				<hr>
+				<div id="post-komen">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Bagian Footer-->
+	<footer class="has-text-centered">
+		<p>Website ini dibuat untuk memudahkan anda dalam mencari tempat nongkrong bersama teman</p>
+		<p>&copy; Kelompok 8</p>	
+	</footer>
+	<script src="../js/script.js"></script>
+</body>
+</html>
