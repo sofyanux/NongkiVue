@@ -1,5 +1,10 @@
 # nongki
 
+## Project Website Tempat Nongkrong Balikpapan
+```
+Update terakhir yang masih belum sempurna pada fitur komentar dan search
+```
+
 ## Project setup
 ```
 npm install
